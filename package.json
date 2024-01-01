@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build"
+  },
+  "next": {
+    "target": "serverless"
   },
   "basePath": "/Izazv3.github.io",
   "publicRuntimeConfig": {
