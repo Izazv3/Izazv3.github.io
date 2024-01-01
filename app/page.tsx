@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
 <main>
-  <div className=''>hello world shiek</div>
+  <div className=''>hello world peter maaame</div>
   <Image
         src="next.svg" // Replace with the actual path to your image
         alt="Description of the image"
