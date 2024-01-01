@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  distDir: "build",
+  distDir: "out",
   assetPrefix: "/Izazv3.github.io",
   trailingSlash: true,
 };
