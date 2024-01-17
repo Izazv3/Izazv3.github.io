@@ -2,4 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1e90ff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}

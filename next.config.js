@@ -2,8 +2,12 @@
 const nextConfig = {
   output: "export",
   distDir: "out",
-  assetPrefix: "/Izazv3.github.io",
-  trailingSlash: true,
+
+  // exportPathMap: function () {
+  //   return {
+  //     "/": { page: "/" }, // Change '/page' to the desired default page
+  //   };
+  // },
 };
 
 module.exports = nextConfig;
