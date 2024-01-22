@@ -2,23 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+html {
+  --line-color: #e5e7eb;
 }
 
-a {
-  color: #4b5563;
-  text-decoration: none;
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 
-a:hover {
-  color: #00ccff;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+.borderBlack {
+  @apply border border-black/10;
 }
