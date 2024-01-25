@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import inderact from "@/public/corpcomment.png";
+import inderact from "@/public/inderact.jpg";
 import indesk from "@/public/indesk.png";
 import biopage from "@/public/bio.png";
 
