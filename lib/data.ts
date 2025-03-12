@@ -46,11 +46,18 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Madurai, TN",
     description:
-      "I worked as a front-end developer for 1 years of experience. I also upskilled to the full stack.",
+      "I worked as a front-end developer for 2 years of experience. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - present",
+    date: "2022 - 2024",
   },
-
+  {
+    title: "Software Developer",
+    location: "Madurai, TN",
+    description:
+      "I worked as a software2024 developer for 3 years of experience in Cross platform app developement with android and ios . I also learned system design.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - Present",
+  },
 ] as const;
 
 export const projectsData = [
@@ -58,7 +65,7 @@ export const projectsData = [
     title: "Whatsapp Chatbot",
     description:
       "Sending Whatsapp Campaigns and Templates. It has features like Chatbot, Scheduler, Real-time Communication ",
-    tags: ["Flutter", "GETX", "API integration", "Socket IO", ],
+    tags: ["Flutter", "GETX", "API integration", "Socket IO"],
     imageUrl: inderact,
   },
   {
@@ -76,22 +83,24 @@ export const projectsData = [
     tags: ["Flutter", "API Intergration", "GETX", "Random Color Scheme"],
     imageUrl: biopage,
   },
-
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
-  "React",
+  "JAVA",
   "Next.js",
   "Node.js",
-  "Git",
+  "Git & Github",
   "Tailwind",
-  "GETX",
   "MongoDB",
   "Flutter",
-  "Express",
-  "Framer Motion",
+  "Firebase",
+  "Firebase Functions",
+  "System Design",
+  "LLD & HLD",
+  "Linux",
+  "XCode",
+  "IOS",
 ] as const;
