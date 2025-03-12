@@ -99,6 +99,7 @@ export const skillsData = [
   "Firebase",
   "Firebase Functions",
   "System Design",
+  "DSA",
   "LLD & HLD",
   "Linux",
   "XCode",
