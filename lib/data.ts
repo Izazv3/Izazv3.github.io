@@ -35,10 +35,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated Engineering",
+    title: "Bachelor's in Engineering",
     location: "Madurai, TN",
     description:
-      "I graduated after Engineering. I immediately found a job as a front-end developer intern.",
+      "Completed my engineering degree and started my career as a Front-End Developer intern.",
     icon: React.createElement(LuGraduationCap),
     date: "2022",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Madurai, TN",
     description:
-      "I worked as a front-end developer for 2 years of experience. I also upskilled to the full stack.",
+      "Worked as a Front-End Developer for two years, gaining expertise in building responsive and dynamic user interfaces. During this time, I also expanded my skill set to full-stack development.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2024",
   },
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Software Developer",
     location: "Madurai, TN",
     description:
-      "I worked as a software2024 developer for 3 years of experience in Cross platform app developement with android and ios . I also learned system design.",
+      "Currently working as a Software Developer with three years of experience in cross-platform app development for Android and iOS. I have also gained knowledge in system design and scalable application architecture.",
     icon: React.createElement(CgWorkAlt),
     date: "2024 - Present",
   },
