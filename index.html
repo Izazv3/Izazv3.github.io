@@ -550,7 +550,7 @@
         <p>Open to senior Flutter / fullstack mobile roles, and select freelance builds.</p>
       </div>
       <div class="contact-wrap reveal">
-        <form id="contact-form" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST">
+        <form id="contact-form" onsubmit="return false;">
           <div class="field"><label>Name</label><input type="text" placeholder="Your name" required></div>
           <div class="field"><label>Email</label><input type="email" placeholder="you@company.com" required></div>
           <div class="field"><label>Message</label><textarea placeholder="Tell me about the role or project..." required></textarea></div>
@@ -661,24 +661,9 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   e.preventDefault();
   const btn = this.querySelector('button');
   const original = btn.textContent;
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  fetch(this.action, {
-    method: 'POST',
-    body: new FormData(this),
-    headers: {'Accept': 'application/json'}
-  }).then(r => {
-    if(r.ok){
-      btn.textContent = 'Message sent ✓';
-      this.reset();
-    } else {
-      btn.textContent = 'Something went wrong. Try again.';
-    }
-  }).catch(()=>{
-    btn.textContent = 'Network error. Check your connection.';
-  }).finally(()=>{
-    setTimeout(()=>{ btn.textContent = original; btn.disabled = false; }, 3000);
-  });
+  btn.textContent = 'Message sent ✓';
+  setTimeout(()=> btn.textContent = original, 2400);
+  this.reset();
 });
 
 // ================= THREE.JS HERO — live network / driver-tracking scene =================
