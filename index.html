@@ -336,7 +336,7 @@
     <div class="hero-social">
       <a href="https://www.linkedin.com/in/izaz-ahamed-5ab980207/" target="_blank">LinkedIn</a>
       <a href="https://github.com/Izazv3" target="_blank">GitHub</a>
-      <a href="mailto:izazahamed0508@gmail.com">Email</a>
+      <a href="mailto:izazahamedpro2017@gmail.com">Email</a>
       <a href="https://wa.me/917339147085" target="_blank">WhatsApp</a>
     </div>
     <div class="scroll-cue"><span>SCROLL</span><div class="line"><span></span></div></div>
@@ -550,14 +550,14 @@
         <p>Open to senior Flutter / fullstack mobile roles, and select freelance builds.</p>
       </div>
       <div class="contact-wrap reveal">
-        <form id="contact-form" onsubmit="return false;">
+        <form id="contact-form" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST">
           <div class="field"><label>Name</label><input type="text" placeholder="Your name" required></div>
           <div class="field"><label>Email</label><input type="email" placeholder="you@company.com" required></div>
           <div class="field"><label>Message</label><textarea placeholder="Tell me about the role or project..." required></textarea></div>
           <button class="btn btn-primary magnetic" type="submit" style="width:100%;justify-content:center;">Send Message</button>
         </form>
         <div class="contact-info">
-          <a href="mailto:izazahamed0508@gmail.com"><span class="l">Email</span><span class="r">izazahamed0508@gmail.com</span></a>
+          <a href="mailto:izazahamedpro2017@gmail.com"><span class="l">Email</span><span class="r">izazahamedpro2017@gmail.com</span></a>
           <a href="tel:+917339147085"><span class="l">Phone</span><span class="r">+91 73391 47085</span></a>
           <a href="https://www.linkedin.com/in/izaz-ahamed-5ab980207/" target="_blank"><span class="l">LinkedIn</span><span class="r">in/izaz-ahamed</span></a>
           <a href="https://github.com/Izazv3" target="_blank"><span class="l">GitHub</span><span class="r">@Izazv3</span></a>
@@ -656,13 +656,29 @@ document.querySelectorAll('.stat-item .n').forEach(el=>{
   });
 });
 
-// ---------- Contact form (demo) ----------
+// ---------- Contact form ----------
 document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
   const btn = this.querySelector('button');
   const original = btn.textContent;
-  btn.textContent = 'Message sent ✓';
-  setTimeout(()=> btn.textContent = original, 2400);
-  this.reset();
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  fetch(this.action, {
+    method: 'POST',
+    body: new FormData(this),
+    headers: {'Accept': 'application/json'}
+  }).then(r => {
+    if(r.ok){
+      btn.textContent = 'Message sent ✓';
+      this.reset();
+    } else {
+      btn.textContent = 'Something went wrong. Try again.';
+    }
+  }).catch(()=>{
+    btn.textContent = 'Network error. Check your connection.';
+  }).finally(()=>{
+    setTimeout(()=>{ btn.textContent = original; btn.disabled = false; }, 3000);
+  });
 });
 
 // ================= THREE.JS HERO — live network / driver-tracking scene =================
