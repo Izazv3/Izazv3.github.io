@@ -329,7 +329,7 @@
       <p class="tagline">4+ years shipping ride-hailing, delivery, and real-time tracking platforms end to end — from Firestore schema to the App Store. Currently architecting a multi-role super-app at Feb40.</p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary magnetic">View Projects</a>
-        <a href="#" class="btn btn-ghost magnetic" id="resume-btn">Download Résumé</a>
+        <a href="fullstack_resume.pdf" class="btn btn-ghost magnetic" id="resume-btn">Download Résumé</a>
         <a href="#contact" class="btn btn-ghost magnetic">Contact Me</a>
       </div>
     </div>
@@ -459,9 +459,9 @@
           <div class="feature-tags">
             <span>JWT Auth</span><span>Live GPS Tracking</span><span>Native Kotlin/Swift Bridges</span><span>Payments</span>
           </div>
-          <div class="project-links">
+          <!-- <div class="project-links">
             <a href="https://github.com/Izazv3" target="_blank">GitHub ↗</a>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -474,9 +474,9 @@
           <div class="feature-tags">
             <span>YOLOv8</span><span>OpenCV</span><span>ESP32</span><span>Flutter Dashboard</span>
           </div>
-          <div class="project-links">
+          <!-- <div class="project-links">
             <a href="https://github.com/Izazv3" target="_blank">GitHub ↗</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -663,12 +663,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   btn.textContent = 'Message sent ✓';
   setTimeout(()=> btn.textContent = original, 2400);
   this.reset();
-});
-
-// ---------- Résumé button (no file attached in this demo) ----------
-document.getElementById('resume-btn').addEventListener('click', e=>{
-  e.preventDefault();
-  alert('Attach your résumé file and link it here.');
 });
 
 // ================= THREE.JS HERO — live network / driver-tracking scene =================
